@@ -23,7 +23,6 @@ namespace TP4.Controllers
             UniversityContext universityContext = UniversityContext.Instantiate_UniversityContext();
             Debug.WriteLine("UniversityContext is instantiated {0} times", UniversityContext.count);
             List<Student> s = universityContext.Student.ToList();
-            //Debug.WriteLine("9bal");
             foreach (Student student in s)
             {
                 Debug.WriteLine("Student {0} {1} {2} {3}  ", student.id, student.first_name, student.last_name, student.phone_number);
